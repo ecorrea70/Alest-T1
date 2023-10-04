@@ -303,4 +303,23 @@ public class DoubleLinkedListOfInteger {
     }
 
 
+    //MÉTODOS DO TRABALHO
+
+    //a
+    public int countOccurrences(Integer element){
+        int occurrences = 0;
+        for (int i=0; i<count; i++){
+            if (i==element){
+                occurrences+=1;
+            }
+        }
+        return occurrences;
+    }
+
+    //b
+//    public  boolean removeEvenNumbers( ... ){
+//
+//    }
+
+
 }

@@ -46,6 +46,11 @@ public class App {
         System.out.println("Maior valor comum entre as listas: " + Operations.getBiggestComumValue(dlist, dlist2));
 
 
+        //teste do método A
+        System.out.println(dlist.countOccurrences(64725));
+
+
+
     }
 
 }
