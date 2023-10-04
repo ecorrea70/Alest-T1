@@ -47,7 +47,12 @@ public class App {
 
 
         //teste do método A
-        System.out.println(dlist.countOccurrences(64725));
+        DoubleLinkedListOfInteger dlist3 = new DoubleLinkedListOfInteger();
+        dlist3.add(10);
+        dlist3.add(10);
+        dlist3.add(10);
+        dlist3.add(10);
+        System.out.println(dlist3.countOccurrences(10));
 
 
 

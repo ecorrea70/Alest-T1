@@ -306,19 +306,28 @@ public class DoubleLinkedListOfInteger {
     //MÉTODOS DO TRABALHO
 
     //a
-    public int countOccurrences(Integer element){
+    /**
+     * Método que percorre a lista removendo todos os elementos pares.
+     * Defina os atributos necessários para este algoritmo, pois nenhum método já implementado pode ser chamado
+     * pois nenhum método já implementado pode ser chamado.
+     * @return true se houver alguma remoção, e false caso não tenham elementos pares e não seja feita remoção
+     */
+    public int countOccurrences(Integer element) {
         int occurrences = 0;
-        for (int i=0; i<count; i++){
-            if (i==element){
-                occurrences+=1;
+        Node aux = header.next;
+        while (aux != trailer) {
+            if (aux.element.equals(element)) {
+                occurrences++;
             }
+            aux = aux.next;
         }
         return occurrences;
     }
 
+
     //b
 //    public  boolean removeEvenNumbers( ... ){
-//
+//    for (int i)
 //    }
 
 
