@@ -54,6 +54,12 @@ public class App {
         dlist3.add(10);
         System.out.println(dlist3.countOccurrences(10));
 
+        //teste do método B
+        System.out.println(dlist3.removeEvenNumbers());
+        System.out.println(dlist3.countOccurrences(10)); //vê se os '10' que foram adicionados foram removidos, já que são numeros par.
+
+
+
 
 
     }
