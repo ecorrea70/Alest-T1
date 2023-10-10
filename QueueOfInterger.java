@@ -51,4 +51,22 @@ public class QueueOfInterger {
             fila.clear();
         }
     }
+
+    //método 3b
+    /**
+     * Método enqueuePriority()
+     * Recebe como parâmetro um elemento que deve ser inserido na fila de acordo com a sua prioridade
+     * @param element elemento a ser inserido
+     */
+    public void enqueuePriority(Integer element) {
+        int index = 0;
+        for (int i = 0; i < fila.size(); i++) {
+            if (element < fila.get(i)) {
+                break;
+            }
+            index++;
+        }
+        fila.add(index, element);
+    }
+
 }

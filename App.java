@@ -46,6 +46,15 @@ public class App {
         estaVazia = fila.isEmpty();
         System.out.println("A fila está vazia? " + estaVazia);
 
+        fila.enqueue(20);
+        fila.enqueue(30);
+        fila.enqueue(40);
+        head = fila.head();
+        System.out.println("Elemento no início da fila: " + head);
+
+        fila.enqueuePriority(10); //executa o método 3b e verifica se a operação funcionou
+        head = fila.head();
+        System.out.println("Elemento no início da fila: " + head);
 
 
 
